@@ -13,6 +13,7 @@ index.html
 int64.js
 jb.js
 jbn.js
+jbv2.js
 mira.js
 netcat.js
 exploit.js
@@ -21,6 +22,9 @@ loader.js
 payload20B.html
 payload11.html
 payload10.html
+755V10.html
+755V11.html
+755V20B.html
 755N10.html
 755N11.html
 755N20B.html
