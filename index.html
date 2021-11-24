@@ -66,20 +66,23 @@ document.cookie = 'kex=1';
 <br>
 <h1 style="font-size:60px;text-align:center;color:#ffffff;">PS4 애플 HACK - 7.55 G2.0</h1>
 <div style="text-align:center">
+<button class="btn btn-main" onmouseover="newpayloadV220B()" onmouseout="pagetitle()" onclick=load_goldhen_V2N20B()> <b>V2 - GOLDHEN 2.0B</b> </button>
+<button class="btn btn-main" onmouseover="newpayloadV211()" onmouseout="pagetitle()" onclick=load_goldhen_V2N11()> <b>V2 - GOLDHEN 1.1</b> </button>
+<button class="btn btn-main" onmouseover="newpayloadV210()" onmouseout="pagetitle()" onclick=load_goldhen_V2N10()> <b>V2 - GOLDHEN 1.0</b> </button>
+<br>
+<h1 style="font-size:30px;text-align:center;color:#ffffff"> 핵(HACK)을 선택해주세요</h1>
 <button class="btn btn-main" onmouseover="newpayload20B()" onmouseout="pagetitle()" onclick=load_goldhen_N20B()> <b>NEW - GOLDHEN 2.0B</b> </button>
 <button class="btn btn-main" onmouseover="newpayload11()" onmouseout="pagetitle()" onclick=load_goldhen_N11()> <b>NEW - GOLDHEN 1.1</b> </button>
 <button class="btn btn-main" onmouseover="newpayload10()" onmouseout="pagetitle()" onclick=load_goldhen_N10()> <b>NEW - GOLDHEN 1.0</b> </button>
 <br>
-<h1 style="font-size:30px;text-align:center;color:#ffffff"> 핵(HACK)을 선택해주세요</h1>
 <button class="btn btn-main" onmouseover="oldpayload20B()" onmouseout="pagetitle()" onclick=load_goldhen_O20B()> <b>OLD - GOLDHEN 2.0B</b> </button>
 <button class="btn btn-main" onmouseover="oldpayload11()" onmouseout="pagetitle()" onclick=load_goldhen_O11()> <b>OLD - GOLDHEN 1.1</b> </button>
 <button class="btn btn-main" onmouseover="oldpayload10()" onmouseout="pagetitle()" onclick=load_goldhen_O10()> <b>OLD - GOLDHEN 1.0</b> </button>
 <br><br>
-<button class="btn btn-main" onmouseover="dumper()" onmouseout="pagetitle()" onclick=load_dumper()> <b>DUMPER</b> </button>
 <br>
 <br>
-<h1 style="font-size:25px;text-align:center;color:#ffccff;">다운되면 다른버전 [ NEW↔OLD or G2.0↔G1.1↔G1.0 ] 을 골라보세요</h1>
-<h1 style="font-size:20px;text-align:right;color:#ffffff;">UPDATE:2021-09-17 Ver1.2&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+<h1 style="font-size:25px;text-align:center;color:#ffccff;">다운되면 다른버전 [ V2↔NEW↔OLD or G2.0↔G1.1↔G1.0 ]을 선택해보세요</h1>
+<h1 style="font-size:20px;text-align:right;color:#ffffff;">UPDATE:2021-11-25 Ver1.1&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
 <br>
 <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <br>
@@ -88,6 +91,15 @@ document.cookie = 'kex=1';
 <br>
 <br>
 <script>
+function newpayloadV220B(){
+document.getElementById("msgs").innerHTML = "V2 골드핸(NEW_GOLDHEN) v2.0B";
+}
+function newpayloadV211(){
+document.getElementById("msgs").innerHTML = "V2 골드핸(NEW_GOLDHEN) v1.1";
+}
+function newpayloadV210(){
+document.getElementById("msgs").innerHTML = "V2 골드핸(NEW_GOLDHEN) v1.0";
+}
 function newpayload20B(){
 document.getElementById("msgs").innerHTML = "뉴 골드핸(NEW_GOLDHEN) v2.0B";
 }
@@ -106,11 +118,29 @@ document.getElementById("msgs").innerHTML = "올드 골드핸(OLD_GOLDHEN) v1.1"
 function oldpayload10(){
 document.getElementById("msgs").innerHTML = "올드 골드핸(OLD_GOLDHEN) v1.0";
 }
-function dumper(){
-document.getElementById("msgs").innerHTML = "DUMP YOUR GAMES";
-}
 function pagetitle(){
 document.getElementById("msgs").innerHTML = "BASE (MASTERHACK)";
+}
+function load_goldhen_V2N20B(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = '755V20B.html';
+        link.click();
+}
+function load_goldhen_V2N11(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = '755V11.html';
+        link.click();
+}
+function load_goldhen_V2N10(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = '755V10.html';
+        link.click();
 }
 function load_goldhen_N20B(){
 
@@ -152,13 +182,6 @@ function load_goldhen_O10(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'payload10.html#f=goldhen.js';
-        link.click();
-}
-function load_dumper(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'payload11.html#f=app-dumper.js';
         link.click();
 }
 
